@@ -1,0 +1,3 @@
+stock_homepage:
+    path:     /stock
+    defaults: { _controller: StockBundle:Default:index }

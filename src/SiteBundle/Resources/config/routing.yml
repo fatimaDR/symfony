@@ -1,0 +1,7 @@
+site_homepage:
+    path:     /site
+    defaults: { _controller: SiteBundle:Default:index }
+
+site_index:
+    path:     /index
+    defaults: { _controller: SiteBundle:Public:index }

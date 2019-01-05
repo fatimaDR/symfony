@@ -1,0 +1,36 @@
+{% extends "BlogBundle::base.html.twig" %}
+
+
+{% block content %}
+
+{{ parent() }}
+<div class="container" >
+  <div class="row">
+    <div class="col-md-8">
+
+    	<ul class="list-group"> 
+
+
+            {% for index,article in articles %}
+
+            <li class="list-group-item {% if loop.first %} active {% endif %}">
+				        
+				        <h1> {{ article.titre }} N°: {{loop.index}}</h1>
+
+				        <p> {{ article.poste }} </p>
+
+				        <small> {{ article.datePublication}} </small>
+
+            </li>
+    <hr />
+           {% endfor %}
+
+    	</ul>
+
+    </div>
+
+  </div>
+
+</div>
+
+{% endblock %}

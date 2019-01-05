@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Layout page</title>
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+
+    {% block stylesheets %} {% endblock %}
+
+    </head>
+    <body>
+
+  <div class="container">
+    
+        {% include("BlogBundle:parties:menu.html.twig") %}
+
+        {% block content %} {% endblock %}
+
+        <script src="{{ asset('js/bootstrap.min.js') }}" ></script>
+
+        {% block javascript %}  {% endblock %} 
+
+    </div>
+     
+    </body>
+</html>
